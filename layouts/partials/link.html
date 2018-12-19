@@ -1,0 +1,3 @@
+{{- range where .Site.Pages "File.Path" (print "parts/" .page ".md") -}}
+<a href="#{{ $.page }}">{{ .Title }}</a>
+{{- end -}}

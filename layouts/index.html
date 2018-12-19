@@ -1,0 +1,34 @@
+{{ define "main" }}
+{{ .Content }}
+
+<div class="column">
+	<div class="hero">
+		<div class="bg">
+			<h1><img id="logo" src="svatbarcamp.svg" alt="svatbarcamp — svatba a barcamp v jednom"></h1>
+			<p>Brno, 9. března 2018 / Radnice / Atlas / Ebisu</p>
+			<nav>
+				<ul>
+					<li>{{ partial "link.html" (dict "page" "concept" "Site" .Site) }}</li>
+					<li>{{ partial "link.html" (dict "page" "program" "Site" .Site) }}</li>
+					<li>{{ partial "link.html" (dict "page" "pro-ucastniky" "Site" .Site) }}</li>
+					<li>{{ partial "link.html" (dict "page" "kam-v-brne" "Site" .Site) }}</li>
+					<li class="separator"></li>
+					<li>{{ partial "link.html" (dict "page" "tym" "Site" .Site) }}</li>
+					<li>{{ partial "link.html" (dict "page" "faq" "Site" .Site) }}</li>
+					<li>{{ partial "link.html" (dict "page" "code-of-conduct" "Site" .Site) }}</li>
+					<li><a href="" class="button">Registrovat se</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div class="column">{{ partial "art.html" (dict "page" "concept" "Site" .Site) }}</div>
+<div class="column">{{ partial "art.html" (dict "page" "program" "Site" .Site) }}</div>
+<div class="column">{{ partial "art.html" (dict "page" "pro-ucastniky" "Site" .Site) }}</div>
+{{ partial "map.html" (dict "page" "kam-v-brne" "Site" .Site) }}
+<div class="column">{{ partial "art.html" (dict "page" "tym" "Site" .Site) }}</div>
+<div class="column">{{ partial "art.html" (dict "page" "faq" "Site" .Site) }}</div>
+<div class="column">{{ partial "art.html" (dict "page" "code-of-conduct" "Site" .Site) }}</div>
+{{ end }}
+

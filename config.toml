@@ -1,0 +1,4 @@
+baseURL = "http://svatbarcamp.cz"
+defaultContentLanguage = "cs"
+title = "Svatbarcamp"
+disableKinds = ["taxonomyTerm", "taxonomy"]

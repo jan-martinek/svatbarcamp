@@ -1,0 +1,19 @@
+{{ range where .Site.Pages "File.Path" (print "parts/" .page ".md") }}
+<div id="{{ $.page }}">
+	<h2><span>{{ .Title }}</span></h2>
+	<div class="wrapper">
+		{{ with .Params.timetable }}
+			<table>
+				{{ range . }}
+					<tr>
+						<th>{{ .time }}</th>
+						<td>{{ .event }}</td>
+					</tr>
+				{{ end }}
+			</table>
+		{{ end }}
+
+		{{ .Content }}
+	</div>
+</div>
+{{ end }}

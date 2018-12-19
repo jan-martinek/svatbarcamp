@@ -1,0 +1,8 @@
+<dl>
+{{ range where .Site.Pages "Section" "faq" }}
+	{{ if .Params.question }}
+		<dt>{{ .Params.question }}</dt>
+		<dd>{{ .Section }}</dd>
+	{{ end }}
+{{ end }}
+</dl>

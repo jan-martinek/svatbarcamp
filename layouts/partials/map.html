@@ -1,0 +1,22 @@
+{{ range where .Site.Pages "File.Path" (print "parts/" .page ".md") }}
+<div id="{{ $.page }}" class="column">
+	<h2><span>{{ .Title }}</span></h2>
+</div>
+<div class="map-wrapper">
+	<div id="map-brno"></div>
+	<div class="map-descriptions">
+		<div class="active">
+			<h3>default</h3>
+			<p>xyz</p>
+		</div>
+		{{ range where .Site.Pages "Section" "places" }}
+			{{ if .Params.lat }}
+			<div id="place-{{ .Params.slug }}">
+				<h3>{{ .Title }}</h3>
+				{{ .Content }}
+			</div>
+			{{ end }}
+		{{ end }}
+	</div>
+</div>
+{{ end }}
