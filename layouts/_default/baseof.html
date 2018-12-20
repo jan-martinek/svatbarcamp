@@ -23,6 +23,8 @@
 		<p>Pajka <span class="pink">&hearts;</span> Honza, 2015—2019—a nafurt</p>
 	</footer>
 
+	</div>
+
 	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
 		integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
 		crossorigin=""></script>
@@ -31,8 +33,13 @@
 		var markerData = [];
 		{{ range where .Site.Pages "Section" "places" }}
 			{{ if .Params.lat }}
-			markerData.push({ lat: {{ .Params.lat }}, long: {{ .Params.long }}, icon: "{{ .Params.icon }}", name: "{{ .Params.slug }}" });
+		markerData.push({ lat: {{ .Params.lat }}, long: {{ .Params.long }}, icon: "{{ .Params.icon }}", name: "{{ .Params.slug }}" });
 			{{ end }}
+		{{ end }}
+
+		var quotes = [];
+		{{ range .Site.Data.quotes.quotes }}
+		quotes.push({ quote: "{{ .quote }}", author: "{{ .author }}"});
 		{{ end }}
 	</script>
 

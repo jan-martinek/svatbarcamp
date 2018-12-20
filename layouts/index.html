@@ -23,9 +23,28 @@
 	</div>
 </div>
 
-<div class="column">{{ partial "art.html" (dict "page" "concept" "Site" .Site) }}</div>
-<div class="column">{{ partial "art.html" (dict "page" "program" "Site" .Site) }}</div>
+
+
+<div class="column" id="main">
+	<div>{{ partial "art.html" (dict "page" "concept" "Site" .Site) }}</div>
+	<div>{{ partial "art.html" (dict "page" "program" "Site" .Site) }}</div>
+
+	<div>
+		<h2><span>&hearts;</span></h2>
+		<div class="wrapper">
+			<div id="quote-wrapper">
+				<blockquote>
+					Milovat někoho není jen silný cit author: je to rozhodnutí, je to soud, je to slib.<br>Láska je umění, stejně jako jím je život sám; chceme-li se naučit milovat, musíme postupovat stejně, jako když se chceme vzdělávat v kterémkoli oboru, třeba v hudbě, malířství, medicíně či inženýrství.<br>
+					<cite>Erich Fromm</cite>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
 <div class="column">{{ partial "art.html" (dict "page" "pro-ucastniky" "Site" .Site) }}</div>
+
 {{ partial "map.html" (dict "page" "kam-v-brne" "Site" .Site) }}
 <div class="column">{{ partial "art.html" (dict "page" "tym" "Site" .Site) }}</div>
 <div class="column">{{ partial "art.html" (dict "page" "faq" "Site" .Site) }}</div>
