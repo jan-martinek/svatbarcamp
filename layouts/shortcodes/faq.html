@@ -1,8 +1,8 @@
 <dl>
-{{ range where .Site.Pages "Section" "faq" }}
-	{{ if .Params.question }}
-		<dt>{{ .Params.question }}</dt>
-		<dd>{{ .Section }}</dd>
-	{{ end }}
+{{ $count := len (where (where .Site.Pages "Section" "faq") "Kind" "page") }}
+{{ range $index, $p := (where (where .Site.Pages "Section" "faq") "Kind" "page") }}
+	<dt>{{ $p.Params.question }}</dt>
+	<dd>{{ $p.Content }}</dd>
+	{{ if eq (div (int $count) 2) $index }}</dl><dl>{{ end }}
 {{ end }}
 </dl>

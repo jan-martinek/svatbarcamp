@@ -112,6 +112,22 @@ p {
 	margin: 0 0 1rem;
 }
 
+dt {
+	font-weight: bold;
+	font-size: var(--large);
+	color: var(--pink-4);
+	text-shadow: 1px 1px 0 var(--green-4-half);
+}
+
+dt:nth-child(4n - 1) {
+	color: var(--green-4);
+	text-shadow: 1px 1px 0 var(--pink-4-half);
+}
+
+dd {
+	margin-left: 0;
+}
+
 table {
 	margin: -0.5rem;
 	border-spacing: 0.5rem;
@@ -130,6 +146,24 @@ table tr:nth-child(odd) td {
 
 footer {
 	padding-bottom: 4rem;
+dt {
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+.js dd {
+	display: none;
+}
+
+.js dd.visible {
+	display: block;
+	transform-origin: 0 0;
+	animation: pull 0.3s;
+}
+
+@keyframes pull {
+	0% { transform: scaleY(0); }
+	100% { transform: scaleY(1); }
 }
 
 .pink {
@@ -345,6 +379,12 @@ footer {
 #code-of-conduct {
 	background: var(--green-2-t);
 	box-shadow: 0.75rem 0.75rem 0 var(--pink-3-half);
+}
+
+#faq .wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 3rem;
 }
 
 #code-of-conduct .wrapper {

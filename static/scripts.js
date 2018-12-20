@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+  document.body.classList.add("js");
+
   if (document.getElementById('map-brno')) initMap();
+  Array.prototype.slice.call(document.querySelectorAll("dt")).forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      el.nextElementSibling.classList.toggle("visible");
+    });
+  });
 });
 
 function initMap() {
