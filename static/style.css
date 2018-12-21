@@ -58,6 +58,14 @@
 	--huge: 36px;
 }
 
+@media (max-width: 799.9px) {
+	:root {
+		--normal: 12px;
+		--large: 18px;
+		--huge: 24px;
+	}
+}
+
 .gray {
 	opacity: 0.7;
 }
@@ -114,7 +122,6 @@ p {
 }
 
 dt {
-	font-weight: bold;
 	font-size: var(--large);
 	color: var(--pink-4);
 	text-shadow: 1px 1px 0 var(--green-4-half);
@@ -135,14 +142,18 @@ table {
 	border-collapse: separate;
 }
 table td, table th {
-	background: var(--brown-2);
+	background: var(--pink-3-half);
 	padding: 1rem 1.5rem 0.7rem;
 	box-shadow: 0.25rem 0.25rem 0 var(--green-3);
 }
 
-table tr:nth-child(odd) th,
-table tr:nth-child(odd) td {
-	background: var(--pink-3-half);
+table td.talk {
+	background: var(--brown-2-half);
+}
+
+table td.pause {
+	background: var(--brown-1-t);
+	color: var(--brown-4);
 }
 
 footer.column {
@@ -196,21 +207,46 @@ dt {
 	max-width: 1200px;
 }
 
-.hero {
+.hero .bg {
+	background-image: url(hero.png);
+	padding-top: 49%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.hero nav ul li {
+	font-size: var(--large);
+}
+
+.hero .bg p {
+	color: var(--pink-4);
+}
+
+@media (min-width: 800px) {
+	.hero {
 	width: 104%;
 	margin: 0 -2%;
 	padding-bottom: 59%;
 	position: relative;
-}
+	}
 
-.hero .bg {
-	background-image: url(hero.png);
-	background-size: contain;
-	background-position: top center;
-	background-repeat: no-repeat;
-	position: absolute;
-  	top: 0; bottom: 0; left: 0; right: 0;
-  	padding: 3rem 4rem;
+	.hero .bg {
+		position: absolute;
+	  	top: 0; bottom: 0; left: 0; right: 0;
+	  	padding: 3rem 4rem;
+	}
+
+	.hero nav ul li,
+	.hero .bg a,
+	.hero .bg p {
+		color: white;
+	}
+
+	.hero .bg a.button {
+		margin-top: 3rem;
+		border-color: white;
+	}
 }
 
 .hero nav ul {
@@ -226,7 +262,6 @@ dt {
 	margin-bottom: 0.5rem;
 	font-weight: 300;
 	text-transform: lowercase;
-	color: white;
 }
 .hero nav ul li.separator {
 	width: 10em;
@@ -236,7 +271,6 @@ dt {
 }
 
 .hero .bg a {
-	color: white;
 	text-decoration: none;
 }
 
@@ -245,9 +279,6 @@ dt {
 }
 
 .hero .bg a.button {
-	margin-top: 3rem;
-	color: white;
-	border-color: white;
 	text-decoration: none;
 }
 
@@ -260,17 +291,20 @@ dt {
 	margin: 0;
 }
 
-.hero .bg p {
-	color: white;
-}
-
 #logo {
 	width: 50%;
 }
 
 #tym .wrapper {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+}
+
+
+@media (min-width: 800px) {
+	#tym .wrapper {
+		grid-template-columns: repeat(5, 1fr);
+	}
 }
 
 #tym .wrapper img {
@@ -372,10 +406,12 @@ dt {
 	100% { transform: rotate(0) scaleX(1); }
 }
 
-#main {
-	display: grid;
-	grid-template-columns: 3fr 3fr 2fr;
-	grid-column-gap: 3rem;
+@media (min-width: 800px) {
+	#main {
+		display: grid;
+		grid-template-columns: 4fr 2fr;
+		grid-column-gap: 3rem;
+	}
 }
 
 #code-of-conduct,
@@ -391,28 +427,56 @@ dt {
 	box-shadow: 0.75rem 0.75rem 0 var(--pink-3-half);
 }
 
-#faq .wrapper {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 3rem;
-}
+@media (min-width: 800px) {
+	#faq .wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 3rem;
+	}
 
-#code-of-conduct .wrapper {
-	column-count: 3;
-	column-gap: 3rem;
+	#code-of-conduct .wrapper {
+		column-count: 3;
+		column-gap: 3rem;
+	}
 }
 
 #quote-wrapper blockquote {
 	margin: 0;
 }
 
+#quote-wrapper cite {
+	display: block;
+	text-align: right;
+	font-weight: 300;
+}
+
+#quote-wrapper::after {
+	content: '—';
+	display: block;
+	height: 5px;
+	background: var(--pink-2);
+	overflow: hidden;
+	transform-origin: 0 0;
+	animation: load 10s linear infinite;
+	box-shadow: 4px 2px 0 var(--green-3);
+}
+@keyframes load {
+	0% { transform: scaleX(0); }
+	100% { transform: scaleX(1); }
+}
+
+@media (min-width: 800px) {
+	.map-wrapper {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
+}
+
 .map-wrapper {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
 	border: solid var(--green-4);
 	border-width: 5px 0;	
 	background: var(--brown-2-t);
-	box-shadow: 1rem 1rem 0 var(--green-2);
+	box-shadow: 1rem 1rem 0 var(--green-2-t);
 }
 
 .leaflet-container {
@@ -457,9 +521,20 @@ dt {
 	100% { transform: translate(0, 0); }
 }
 
+
+
 #map-brno {
 	width: 100%;
-	height: 800px;
+	height: 400px;
 	border-right: 5px solid var(--green-4);
 }
+
+@media (min-width: 800px) {
+	#map-brno {
+		border-right: 5px solid var(--green-4);
+		border-bottom: none;
+		height: 400px;
+	}
+}
+
 

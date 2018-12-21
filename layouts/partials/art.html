@@ -2,18 +2,25 @@
 <div id="{{ $.page }}">
 	<h2><span>{{ .Title }}</span></h2>
 	<div class="wrapper">
-		{{ with .Params.timetable }}
+		{{ .Content }}
+		{{ if .Params.timetable }}
+			{{ $params := .Params}}
 			<table>
-				{{ range . }}
+				<tr><th></th><th>Přednášky</th><th>Workshopy</th></tr>
+				{{ range (slice 13 14 15 16 17 18 19 20 21 22 23) }}
 					<tr>
-						<th>{{ .time }}</th>
-						<td>{{ .event }}</td>
+						{{ $hour := . }}
+						<th>{{ . }}</th>
+						{{ range slice "talk" "workshop"}}
+							{{ $type := . }}
+							{{ with index (index $params (print . "s")) (string $hour) }}
+								{{ partial "event.html" (dict "type" $type "hour" $hour "event" .) }}
+							{{ end }}
+						{{ end }}
 					</tr>
-				{{ end }}
+				{{ end }}	
 			</table>
 		{{ end }}
-
-		{{ .Content }}
 	</div>
 </div>
 {{ end }}

@@ -1,4 +1,6 @@
 /* globals quotes, markerData, window, document */
+var quoteInterval;
+
 document.addEventListener("DOMContentLoaded", function(event) {
   document.body.classList.add("js");
 
@@ -7,10 +9,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   if (document.getElementById('quote-wrapper')) {
     var generateQuote = initQuoteGenerator();
    
-    window.setInterval(function() {
+    quoteInterval = window.setInterval(function() {
       var q = generateQuote();
       document.getElementById('quote-wrapper').innerHTML = '<blockquote>' + q.quote + '<br><cite>' + q.author + '</cite></blockquote>';
-    }, 1000 * 3);
+    }, 1000 * 10);
 
   }
 

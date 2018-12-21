@@ -1,12 +1,27 @@
 ---
 title: Program
-timetable:
-  - time: "13.00"
-    event: Obřad na radnici Brno–Střed
-  - time: "14.00"
-    event: Oběd s rodinou v restauraci Ebisu
-  - time: "17.00"
-    event: Konference v kavárně Atlas
-  - time: "20.00"
-    event: Afterpárty v kavárně Atlas
+timetable: true
+talks:
+  13:
+    desc: Obřad na radnici Brno–Střed
+    len: 1
+  14:
+    desc: Obědová přestávka
+    len: 3
+    class: lunch pause
+  17:
+    desc: Konference v kavárně Atlas
+    note: bude upřesněno
+    len: 4
+  21:
+    desc: Afterpárty v kavárně Atlas
+    len: 3
+workshops:
+  14:
+    desc: Oběd s rodinou v restauraci Ebisu
+    note: kapacita je již naplněna
+    len: 3
+  18:
+    desc: placeholder workshop
+    len: 1
 ---

@@ -1,0 +1,10 @@
+<td class="{{ .type }} {{ index .event "class" }}"
+	rowspan="{{ index .event "len" }}"
+	>
+	<b>{{ .hour }}.00</b>
+	{{ index .event "desc" | markdownify}}
+	{{ with index .event "note" }}
+		<br>
+		<small>({{ . | markdownify }})</small>
+	{{ end }}
+</td>
