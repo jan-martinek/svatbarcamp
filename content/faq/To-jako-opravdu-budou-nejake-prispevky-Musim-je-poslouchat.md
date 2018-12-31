@@ -1,4 +1,5 @@
 ---
 question: To jako opravdu budou nějaké příspěvky? Musím je poslouchat?
+order: 11
 ---
-Doufáme, že budou, pokud se s nimi někdo přihlásí. Nikdo nikoho nemusí poslouchat, součástí prostoru bude i chill out zóna.
+Doufáme, že budou. Kdo nechce, nemusí nikoho poslouchat, součástí prostoru bude i chill out (odpočinková) zóna.

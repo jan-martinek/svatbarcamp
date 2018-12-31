@@ -1,10 +1,8 @@
 ---
 title: Pro účastníky
 ---
-### Registrace do  ---
-
-Událost na Facebooku – dejte ostatním vědět, že přijdete
+### Registrace a CFP do 9. února 2019.
 
 ### Hledáme dobrovolníky
 
-Chcete registrovat hosty na barcampu a rozdávat cedulky? Hlídat dětský koutek? Napište ---
+Chtěli byste registrovat hosty na barcampu a rozdávat visačky, nebo třeba chvíli hlídat dětský koutek? Napište komukoliv z organizačního týmu.

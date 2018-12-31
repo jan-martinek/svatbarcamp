@@ -29,7 +29,7 @@ Pokud se účastník zapojí do obtěžujícího chování, organizační tým m
 
 Pokud jste obtěžování, nebo si všimnete, že je někdo jiný obtěžován, nebo máte jakékoliv jiné obavy, tak prosím okamžitě kontaktujte někoho z organizačního týmu. Poznáte podle speciálního oděvu a/nebo visačky.
 
-Organizační tým rád pomůže účastníkům s kontaktováním místní bezpečnostní služby nebo policie, zajištěním doprovodu, nebo jinou asistencí potřebnou pro to, aby se oběti obtěžování cítili bezpečně po dobu trvání svatbarcampu. Vážíme si vaší účasti.
+Organizační tým rád pomůže účastníkům s kontaktováním místní bezpečnostní služby nebo policie, zajištěním doprovodu, nebo jinou asistencí potřebnou pro to, aby se oběti obtěžování cítily bezpečně po dobu trvání svatbarcampu. Vážíme si vaší účasti.
 
 Od všech účastníků očekáváme dodržování těchto pravidel ve všech konferenčních prostorách a na společenských událostech spojených s touto konferencí.
 

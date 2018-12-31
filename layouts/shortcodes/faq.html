@@ -1,6 +1,6 @@
 <dl>
 {{ $count := len (where (where .Site.Pages "Section" "faq") "Kind" "page") }}
-{{ range $index, $p := (where (where .Site.Pages "Section" "faq") "Kind" "page") }}
+{{ range $index, $p := sort (where (where .Site.Pages "Section" "faq") "Kind" "page") "Params.order" "asc" }}
 	<dt>{{ $p.Params.question }}</dt>
 	<dd>{{ $p.Content }}</dd>
 	{{ if eq (div (int $count) 2) $index }}</dl><dl>{{ end }}
