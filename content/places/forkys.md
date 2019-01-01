@@ -5,7 +5,5 @@ long: 16.608792
 icon: jidlo
 slug: forkys
 ---
-tady si můžete dát něco dobrého
-tady si můžete dát něco dobrého
-
-tady si můžete dát něco dobrého  
+Oblíbená vegetariánská restaurace. Mají i kávu a dortíky. 
+[Web Forkys](http://www.forkys.eu)

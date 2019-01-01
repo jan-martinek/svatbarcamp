@@ -5,7 +5,4 @@ long: 16.605942
 icon: event
 slug: radnice
 ---
-jupínek, tohle je popis radnice
-jupínek, tohle je popis radnice
-
-jupínek, tohle je popis radnice
+Tady se vezmeme!

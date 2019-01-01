@@ -5,7 +5,5 @@ long: 16.602127
 icon: jidlo
 slug: podnebi
 ---
-tady si můžete dát něco dobrého
-tady si můžete dát něco dobrého
-
-tady si můžete dát něco dobrého
+Kavárna s dvorkem, na kterém bude v březnu pravděpodobně ještě zima. 
+[Web Podnebí](http://www.podnebi.cz/home/)
