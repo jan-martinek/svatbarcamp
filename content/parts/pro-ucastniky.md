@@ -1,7 +1,13 @@
 ---
 title: Pro účastníky
 ---
-### Registrace a CFP do 9. února 2019.
+### Ještě tu není všechno
+
+Informace postupně doplňujeme. Určitě už si můžete poznačit datum.
+
+### Registrace a CFP do 9. února
+
+Přímo při registraci bude možné poslat návrh vašeho příspěvku na barcamp – přednášky nebo workshopu. Nemusíte to mít celé vymyšlené, prozatím stačí projevit zájem.
 
 ### Hledáme dobrovolníky
 
