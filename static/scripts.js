@@ -21,15 +21,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
       el.nextElementSibling.classList.toggle("visible");
     });
   });
+
+  document.querySelector("#concept ol").addEventListener("click", function(e) {
+    Array.prototype.slice.call(document.querySelectorAll("#concept ol strong")).forEach(function(el) {
+      el.innerHTML = '#' + el.innerHTML.replace(/ /g, " #");
+    });
+
+    var el = document.createElement("strong");
+    el.innerHTML = " #profit";
+    document.querySelector("#concept ol").querySelector("li:last-child").appendChild(el);
+  });
+
 });
 
 
 function initQuoteGenerator() {
   var qGen = new markov(quotes.map(function(q) {return q.quote}).join(" ").toLowerCase().replace(/\./g, ' '), /[AÁBCČDĎEÉĚFGHChIÍJKLMNŇOÓPQRŘSŠTŤUÚŮVWXYÝZŽaábcčdďeéěfghchiíjklmnňoópqrřsštťuúůvwxyýzž']+/g);
   var aGen = new markov(quotes.map(function(q) {return q.author}).join(" ").toLowerCase(), /./g);
+  var prob = 0.2;
 
   return function() {
-    if (Math.random() > 0.5) {
+    prob = prob * 1.1;
+    console.log(prob);
+    if (Math.random() > prob) {
       return quotes[Math.floor(Math.random()*quotes.length)];
     } else {
       return {

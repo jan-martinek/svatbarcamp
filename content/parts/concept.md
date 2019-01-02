@@ -1,13 +1,8 @@
 ---
-title: Vysoký koncept
+title: Koncept
 ---
-1. Pavla a Honza se mají rádi.
-2. Neumí pořádat svatbu, ale umí pořádat konferenci.
-
-Barcamp je „mezinárodní síť uživatelmi (sic) samovytvořených otevřených konferencí.“  Zdroj: [Wikipedia](https://cs.wikipedia.org/wiki/BarCamp)
-
-Svatba je „světově rozšířený společenský obřad, který spojuje dvě osoby.“ Zdroj: [Wikipedia](https://cs.wikipedia.org/wiki/Svatba)
-
-Svatbarcamp je barcamp spojený se svatbou.
-
-Budeme rádi, když nám jej pomůžete spoluvytvářet.
+1. **Pavla a Honza** se mají moc rádi.
+1. Neumí pořádat svatbu, ale umí pořádat konferenci.
+1. **Svatbarcamp** je barcamp spojený se svatbou.
+1. Budeme rádi, když nám jej pomůžete **spoluvytvářet**.
+1. A tím i pro vás vznikne **závazek** do konce života.

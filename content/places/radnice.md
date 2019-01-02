@@ -5,4 +5,6 @@ long: 16.605942
 icon: event
 slug: radnice
 ---
-Tady se vezmeme!
+Tady si P+H řeknou ano+ano!
+
+[Web Brna-středu](http://www.brno-stred.cz)

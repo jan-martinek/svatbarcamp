@@ -8,7 +8,6 @@
 			<p>Brno, 9. března 2018 / Radnice / Café Atlas</p>
 			<nav>
 				<ul>
-					<li>{{ partial "link.html" (dict "page" "concept" "Site" .Site) }}</li>
 					<li>{{ partial "link.html" (dict "page" "program" "Site" .Site) }}</li>
 					<li>{{ partial "link.html" (dict "page" "pro-ucastniky" "Site" .Site) }}</li>
 					<li>{{ partial "link.html" (dict "page" "kam-v-brne" "Site" .Site) }}</li>
@@ -16,24 +15,54 @@
 					<li>{{ partial "link.html" (dict "page" "tym" "Site" .Site) }}</li>
 					<li>{{ partial "link.html" (dict "page" "faq" "Site" .Site) }}</li>
 					<li>{{ partial "link.html" (dict "page" "code-of-conduct" "Site" .Site) }}</li>
-					<li><a href="" class="button">Registrace od 3. ledna</a></li>
 				</ul>
 			</nav>
 		</div>
 	</div>
 </div>
 
-<div class="column">{{ partial "art.html" (dict "page" "concept" "Site" .Site) }}</div>
+<div class="column" id="concept">
+	<div>
+		{{ range where .Site.Pages "File.Path" (print "parts/concept.md") }}
+			{{ .Content }}
+		{{ end }}
+	</div>
+	<div>
+		<p>
+			<table class="expl">
+				<tr>
+					<td>
+						<p><strong>Barcamp</strong> je <em>„mezinárodní síť uživatelmi (sic) samovytvořených otevřených konferencí.“</em><br>
+							— <a href="https://cs.wikipedia.org/wiki/BarCamp">Wikipedia/BarCamp</a></p>
+					</td>
+					<td>
+						<p><strong>Svatba</strong> je <em>„světově rozšířený společenský obřad, který spojuje dvě osoby.“</em><br>
+							— <a href="https://cs.wikipedia.org/wiki/Svatba">Wikipedia/Svatba</a></p>
+					</td>
+				</tr>
+			</table>
+
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSe4JBJS1-EVJPt2Zcfr2uMfUF_7TH_Uq-9ODw6hefGZCXnUKw/viewform?usp=sf_link" class="button">Registrovat se &rarr; ♥</a><br>
+			Registrace končí 9. února 2019.
+		</p>
+	</div>
+</div>
 
 <div class="column" id="main">
 	<div>{{ partial "art.html" (dict "page" "program" "Site" .Site) }}</div>
 
 	<div>
+		<h2>Pro účastníky</h2>
+		{{ range where .Site.Pages "File.Path" (print "parts/pro-ucastniky.md") }}
+			{{ .Content }}
+		{{ end }}
+
 		<h2><span>&hearts;</span></h2>
 		<div class="wrapper">
 			<div id="quote-wrapper">
 				<blockquote>
-					Milovat někoho není jen silný cit author: je to rozhodnutí, je to soud, je to slib.<br>Láska je umění, stejně jako jím je život sám; chceme-li se naučit milovat, musíme postupovat stejně, jako když se chceme vzdělávat v kterémkoli oboru, třeba v hudbě, malířství, medicíně či inženýrství.<br>
+					<p>Milovat někoho není jen silný cit je to rozhodnutí, je to soud, je to slib.</p>
+					<p>Láska je umění, stejně jako jím je život sám; chceme-li se naučit milovat, musíme postupovat stejně, jako když se chceme vzdělávat v kterémkoli oboru, třeba v hudbě, malířství, medicíně či inženýrství.</p>
 					<cite>Erich Fromm</cite>
 				</blockquote>
 			</div>
@@ -41,8 +70,6 @@
 	</div>
 	
 </div>
-
-<div class="column">{{ partial "art.html" (dict "page" "pro-ucastniky" "Site" .Site) }}</div>
 
 {{ partial "map.html" (dict "page" "kam-v-brne" "Site" .Site) }}
 <div class="column">{{ partial "art.html" (dict "page" "tym" "Site" .Site) }}</div>

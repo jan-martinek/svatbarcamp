@@ -6,4 +6,5 @@ icon: jidlo
 slug: forkys
 ---
 Oblíbená vegetariánská restaurace. Mají i kávu a dortíky. 
+
 [Web Forkys](http://www.forkys.eu)

@@ -5,9 +5,9 @@ title: Pro účastníky
 
 Informace postupně doplňujeme. Určitě už si můžete poznačit datum.
 
-### Registrace a CFP do 9. února
+### Registrace a Call for Papers do 9. února
 
-Přímo při registraci bude možné poslat návrh vašeho příspěvku na barcamp – přednášky nebo workshopu. Nemusíte to mít celé vymyšlené, prozatím stačí projevit zájem.
+Přímo při registraci nám můžete poslat návrh vašeho příspěvku na barcamp — přednášky nebo workshopu. Nemusíte to mít celé vymyšlené, prozatím stačí projevit zájem.
 
 ### Hledáme dobrovolníky
 

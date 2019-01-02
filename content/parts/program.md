@@ -3,11 +3,12 @@ title: Program
 timetable: true
 talks:
   13:
-    desc: Obřad na radnici Brno–Střed
+    desc: Obřad na radnici Brno-střed
     len: 1
   14:
     desc: Obědová přestávka
     len: 3
+    note: vyberte si příjemné místo k obědu <a href="#kam-v-brne">na mapě</a>
     class: lunch pause
   17:
     desc: Konference v kavárně Atlas
@@ -22,6 +23,6 @@ workshops:
     note: kapacita je již naplněna
     len: 3
   18:
-    desc: placeholder workshop
-    len: 1
+    desc: <em>Program workshopů bude upřesněn</em>
+    len: 3
 ---

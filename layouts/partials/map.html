@@ -7,8 +7,13 @@
 	<div id="map-brno"></div>
 	<div class="map-descriptions">
 		<div class="active">
-			<h3>default</h3>
-			<p>xyz</p>
+			<h3>Mapa převážně důležitých míst</h3>
+			<p>Klikejte na ikonky na mapě a dozvíte se mnoho nového.</p>
+
+			<h4>Legenda</h4>
+			<p><img src="/event.png" style="height: 1.5em; vertical-align: middle"> Důležitá místa Svatbarcampu</p>
+			<p><img src="/jidlo.png" style="height: 1.5em; vertical-align: middle"> Tipy na stravování po obřadu</p>
+
 		</div>
 		{{ range where .Site.Pages "Section" "places" }}
 			{{ if .Params.lat }}

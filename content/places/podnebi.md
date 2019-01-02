@@ -6,4 +6,5 @@ icon: jidlo
 slug: podnebi
 ---
 Kavárna s dvorkem, na kterém bude v březnu pravděpodobně ještě zima. 
+
 [Web Podnebí](http://www.podnebi.cz/home/)

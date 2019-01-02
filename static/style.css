@@ -61,8 +61,8 @@
 @media (max-width: 799.9px) {
 	:root {
 		--normal: 12px;
-		--large: 18px;
-		--huge: 24px;
+		--large: 14px;
+		--huge: 28px;
 	}
 }
 
@@ -75,6 +75,7 @@ html, body {
 	padding: 0;
 
 	font-size: var(--normal);
+	font-weight: 400;
 	line-height: 1.5em;
 	background-color: var(--brown-1);
 
@@ -101,8 +102,37 @@ a:hover {
 a.button {
 	display: inline-block;
 	white-space: nowrap;
-	border: 1px solid;
-	padding: 1rem 1.5rem;
+
+	color: var(--pink-4);
+	text-transform: uppercase;
+	font-size: var(--huge);
+	background: var(--green-2-t);
+	border: 1px solid var(--green-4);
+	box-shadow: 4px 4px 0 var(--pink-4-t);
+	padding: 1em 1.5em;
+	margin-bottom: 1rem;
+	text-decoration: none;
+
+	cursor: pointer;
+}
+
+a.button:hover {
+	color: var(--pink-0);
+	background-color: var(--pink-4-half);
+	border-color: var(--pink-4);
+
+	animation: instantheart 1.5s ease;
+	animation-iteration-count: infinite;
+}
+
+@keyframes instantheart {
+	0% { transform: scale(1, 1); }
+	10% { transform: scale(1, 1); }
+	20% { transform: scale(1.05, 1.05); box-shadow: 8px 8px 0 var(--pink-4-t); }
+	30% { transform: scale(1, 1); box-shadow: 4px 4px 0 var(--pink-4-t); }
+	40% { transform: scale(1.05, 1.05); box-shadow: 8px 8px 0 var(--pink-4-t); }
+	50% { transform: scale(1, 1); box-shadow: 4px 4px 0 var(--pink-4-t);}
+	100% { transform: scale(1, 1); }
 }
 
 h2 {
@@ -115,6 +145,10 @@ h2 {
 
 h3 {
 	margin: 2rem 0 0.5rem;
+}
+
+h2+h3 {
+	margin-top: 0;
 }
 
 p {
@@ -136,22 +170,65 @@ dd {
 	margin-left: 0;
 }
 
-table {
+#concept ol {
+	padding: 0 0 0 1em;
+}
+
+#concept ol li {
+	margin-bottom: 0.5rem;
+	font-size: var(--large);
+	line-height: 1.4em;
+	color: var(--pink-4);
+	list-style-type: none;
+	text-indent: -1em;
+}
+
+#concept ol li::before {
+	content: "♥ ";
+	opacity: 0.5;
+}
+
+#concept ol li strong {
+	background: var(--brown-2-half);
+	box-shadow: 3px 3px 0 var(--brown-2-half);
+}
+
+#concept ol li:nth-child(even) {
+	color: var(--brown-4);
+	margin-left: 1em;
+}
+
+#concept ol li:nth-child(even)::before {
+	opacity: 0.3;
+}
+
+#concept table {
+	margin: 1rem 0;
+	border-collapse: collapse;
+}
+
+#concept table td {
+	vertical-align: top;
+	padding-right: 1rem;
+}
+
+
+#program table {
 	margin: -0.5rem;
 	border-spacing: 0.5rem;
 	border-collapse: separate;
 }
-table td, table th {
+#program table td, table th {
 	background: var(--pink-3-half);
 	padding: 1rem 1.5rem 0.7rem;
 	box-shadow: 0.25rem 0.25rem 0 var(--green-3);
 }
 
-table td.talk {
+#program table td.talk {
 	background: var(--brown-2-half);
 }
 
-table td.pause {
+#program table td.pause {
 	background: var(--brown-1-t);
 	color: var(--brown-4);
 }
@@ -189,7 +266,7 @@ dt {
 	display: inline-block;
 	transform-origin: 50% 50%;
 	animation: heart 1.5s ease;
-	animation-iteration-count: infinite;
+	animation-iteration-count: 3;
 }
 
 @keyframes heart {
@@ -204,7 +281,7 @@ dt {
 .column {
 	margin: 2rem auto;
 	padding: 0 2rem;
-	max-width: 1200px;
+	max-width: 1230px;
 }
 
 .hero .bg {
@@ -268,6 +345,22 @@ dt {
 	padding: 0.5rem 0;
 	margin-bottom: 0.5rem;
 	border-bottom: 1px solid var(--brown-2-half);
+}
+
+@media (max-width: 799.9px) {
+	.hero nav {
+		border-bottom: 1px solid var(--pink-4-t);
+	}
+
+	.hero nav ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	}
+
+	.hero nav ul li.separator {
+		display: none;
+	}	
+
 }
 
 .hero .bg a {
@@ -428,10 +521,15 @@ dt {
 }
 
 @media (min-width: 800px) {
+	#concept,
 	#faq .wrapper {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 3fr 4fr;
 		grid-column-gap: 3rem;
+	}
+
+	#faq .wrapper {
+		grid-template-columns: 1fr 1fr;
 	}
 
 	#code-of-conduct .wrapper {
@@ -442,6 +540,7 @@ dt {
 
 #quote-wrapper blockquote {
 	margin: 0;
+	min-height: 18em;
 }
 
 #quote-wrapper cite {
@@ -450,7 +549,11 @@ dt {
 	font-weight: 300;
 }
 
-#quote-wrapper::after {
+#quote-wrapper {
+	padding-top: 1rem;
+}
+
+#quote-wrapper::before {
 	content: '—';
 	display: block;
 	height: 5px;
@@ -459,6 +562,9 @@ dt {
 	transform-origin: 0 0;
 	animation: load 10s linear infinite;
 	box-shadow: 4px 2px 0 var(--green-3);
+
+	position: relative;
+	top: -0.5rem;
 }
 @keyframes load {
 	0% { transform: scaleX(0); }
