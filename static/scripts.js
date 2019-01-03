@@ -1,5 +1,6 @@
 /* globals quotes, markerData, window, document */
 var quoteInterval;
+var profited = 0;
 
 document.addEventListener("DOMContentLoaded", function(event) {
   document.body.classList.add("js");
@@ -30,6 +31,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var el = document.createElement("strong");
     el.innerHTML = " #profit";
     document.querySelector("#concept ol").querySelector("li:last-child").appendChild(el);
+
+    profited++;
+
+    if (profited > 6) window.alert('ZOMG MUCH PROFIT!')
   });
 
 });

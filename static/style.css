@@ -171,7 +171,19 @@ dd {
 }
 
 #concept ol {
-	padding: 0 0 0 1em;
+	background: var(--brown-2-half);
+	box-shadow: 5px 5px 0 var(--green-2-half);
+	border: 1px solid var(--brown-3);
+	
+	padding: 1rem 1rem 1rem 2.5rem;
+}
+
+@media (min-width: 800px) {
+	#concept ol {
+		border-width: 0 1px 1px 0;
+		padding: 4rem 1rem 1rem 2.5rem;
+		margin-top: -3rem;
+	}
 }
 
 #concept ol li {
@@ -348,8 +360,8 @@ dt {
 }
 
 @media (max-width: 799.9px) {
-	.hero nav {
-		border-bottom: 1px solid var(--pink-4-t);
+	#concept {
+		margin-top: -1.5rem;
 	}
 
 	.hero nav ul {
@@ -359,8 +371,7 @@ dt {
 
 	.hero nav ul li.separator {
 		display: none;
-	}	
-
+	}
 }
 
 .hero .bg a {
