@@ -1,3 +1,3 @@
 ---
-title: Svatbarcamp
+title: Svatbarcamp Pavly a Honzy
 ---
