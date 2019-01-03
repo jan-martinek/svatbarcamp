@@ -60,8 +60,8 @@
 
 @media (max-width: 799.9px) {
 	:root {
-		--normal: 12px;
-		--large: 14px;
+		--normal: 13px;
+		--large: 15px;
 		--huge: 20px;
 	}
 }
