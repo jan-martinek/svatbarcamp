@@ -25,16 +25,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   document.querySelector("#concept ol").addEventListener("click", function(e) {
     Array.prototype.slice.call(document.querySelectorAll("#concept ol strong")).forEach(function(el) {
-      el.innerHTML = '#' + el.innerHTML.replace(/ /g, " #");
+      el.innerHTML = el.innerHTML.replace(/(^| )([^\sa#])/g, " #$2");
     });
 
-    var el = document.createElement("strong");
-    el.innerHTML = " #profit";
-    document.querySelector("#concept ol").querySelector("li:last-child").appendChild(el);
+    if (!profited) {
+      var el = document.createElement("strong");
+      el.innerHTML = " #profit";
+      document.querySelector("#concept ol").querySelector("li:last-child").appendChild(el);
+    }
 
     profited++;
 
-    if (profited > 6) window.alert('ZOMG MUCH PROFIT!')
+    if (profited > 3) window.alert('ZOMG MUCH PROFIT!')
   });
 
 });
