@@ -1,5 +1,6 @@
 {{ define "main" }}
 	<div class="column">
-		<img src="/404.jpg" alt="404! Stránka tu není." style="width: 110%; margin-left: -5%; box-sizing: border-box;">
+		<img src="/{{ .Params.img }}" alt="{{ .Params.error }}" style="width: 110%; margin-left: -5%; box-sizing: border-box;">
+		<h1>{{ .Params.error }}</h1>
 	</div>
 {{ end }}
