@@ -3,15 +3,15 @@ ways:
     desc: |
       Můžete to udělat do 9. února přímo při registraci. 
       Podívejte se na CFP pro více informací.
-  - name: Doneste něco dobrého
-    desc: |
-      Pokud rádi pečete, vaříte, pěstujete ovoce, zeleninu či jiné poživatiny a chcete se podělit s ostatními. 
   - name: Pomozte nám s něčím na místě
     desc: |
       Pokud máte rádi lidi, můžete je po příchodu zaregistrovat.
       Pokud máte rádi děcka, můžete s nimi trávit čas v dětském koutku.
       Pokud máte auto, bude možná potřeba něco nebo někoho převézt.
       Můžete také pomoct s úklidem, výzdobou místa, nebo čímkoliv dalším, co nás nenapadlo, nebo možná napadlo, ale bylo nám hloupé to sem psát.
+  - name: Doneste něco dobrého
+    desc: |
+      Pokud rádi pečete, vaříte, pěstujete ovoce, zeleninu či jiné poživatiny a chcete se podělit s ostatními.
   - name: Vyfoťte nějakou pěknou fotku
     desc: |
       Ze samotného Svatbarcampu nebo z vašich příprav na něj. 
