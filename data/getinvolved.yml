@@ -1,19 +1,27 @@
 ways:
+  - name: Přihlaste příspěvek na barcamp
+    desc: |
+      Můžete to udělat do 9. února přímo při registraci. 
+      Podívejte se na CFP pro více informací.
   - name: Doneste něco dobrého
     desc: |
-      …
+      Pokud rádi pečete, vaříte, pěstujete ovoce, zeleninu či jiné poživatiny a chcete se podělit s ostatními. 
   - name: Pomozte nám s něčím na místě
     desc: |
-      koutek, výzdoby, registrace, úklid, svoz
+      Pokud máte rádi lidi, můžete je po příchodu zaregistrovat.
+      Pokud máte rádi děcka, můžete s nimi trávit čas v dětském koutku.
+      Pokud máte auto, bude možná potřeba něco nebo někoho převézt.
+      Můžete také pomoct s úklidem, výzdobou místa, nebo čímkoliv dalším, co nás nenapadlo, nebo možná napadlo, ale bylo nám hloupé to sem psát.
   - name: Vyfoťte nějakou pěknou fotku
     desc: |
-      do [alba](https://photos.app.goo.gl/n7jCLXwbTuiprmDz6)
-  - name: Přispějte na dobrou věc!
+      Ze samotného Svatbarcampu nebo z vašich příprav na něj. 
+      Pak ji nahrejte [do alba](https://photos.app.goo.gl/n7jCLXwbTuiprmDz6), aby ji všichni viděli a měli z ní radost.
+  - name: Přispějte na dobrou věc
     desc: |
-      …
+      Vyberte si jednu z věcí, které fandíme a podpořte ji – včas připravíme seznam.
   - name: Přispějte nám
     desc: |
-      …
+      Pošleme vám pak obrázek z výletu nebo z knihkupectví.
   - name: Udělejte něco pěkného pro někoho úplně cizího
     desc: |
-      … 
+      Aby byl svět zase v pořádku, jako internet v roce 2011.
