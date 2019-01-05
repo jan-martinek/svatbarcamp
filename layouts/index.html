@@ -9,6 +9,7 @@
 			<nav>
 				<ul>
 					<li>{{ partial "link.html" (dict "page" "program" "Site" .Site) }}</li>
+					<li><a href="#get-involved">Jak se zapojit?</a></li>
 					<li>{{ partial "link.html" (dict "page" "aktuality" "Site" .Site) }}</li>
 					<li>{{ partial "link.html" (dict "page" "kam-v-brne" "Site" .Site) }}</li>
 					<li class="separator"></li>
@@ -48,9 +49,9 @@
 	</div>
 </div>
 
-<div class="column">
+<div class="column" id="get-involved">
 	<h2>Jak se zapojit?</h2>
-	<div id="get-involved">
+	<div class="wrapper">
 		{{ range .Site.Data.getinvolved.ways }}
 			<div id="{{ substr (base64Encode .name) 0 6 }}">
 				<h3>{{ .name }}</h3>
