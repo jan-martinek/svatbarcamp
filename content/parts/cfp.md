@@ -1,7 +1,9 @@
 ---
 title: Call for Papers
 ---
-Na Svatbarcamp můžete přihlásit přednášku, workshop, nebo něco jiného. Příspěvek pojměte tak (ne)vážně, jak vám bude milé. 
+**Na Svatbarcamp můžete přihlásit přednášku, workshop, nebo něco jiného. Příspěvek pojměte tak (ne)vážně, jak vám bude milé.**
+
+<img src="/cfp.jpg" style="width: 100%">
 
 Nemusíte to mít celé vymyšlené, stačí projevit zájem a poslat pár stručných vět. 
 
