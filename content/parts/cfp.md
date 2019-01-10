@@ -11,6 +11,8 @@ Délka přednášky: v intervalu 5–15 minut
 Délka workshopu: navrhněte, domluvíme se  
 Jiný formát: navrhněte, domluvíme se
 
+Přihlašování příspěvků je součástí registračního formuláře a pozdější upřesnění můžete zaslat pomocí kontaktního formuláře. Kdybyste potřebovali ještě nějaké jiné formuláře, dejte nám vědět pomocí kontaktního formuláře.
+
 Členové organizačního týmu rádi [zodpoví případné dotazy](https://docs.google.com/forms/d/e/1FAIpQLSdlp-39nIVKwBSkFWnxKgrNF_PSOQufkPEbk_Gdp_e0oAoXzQ/viewform). 
 
 **Primární zaměření**
