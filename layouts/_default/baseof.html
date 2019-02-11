@@ -12,7 +12,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="/style.css?v=2">
 
-	<meta name="description" content="Pavla a Honza se mají moc rádi. Neumí pořádat svatbu, ale umí pořádat konferenci. Svatbarcamp je barcamp spojený se svatbou.">
+	<meta name="description" content="{{ if eq .Section "invite" }}{{ .Params.address }},<br>
+		rádi bychom {{ .Params.pronoun }} pozvali na naši svatbu!{{ else }}Pavla a Honza se mají moc rádi. Neumí pořádat svatbu, ale umí pořádat konferenci. Svatbarcamp je barcamp spojený se svatbou.{{ end }}">
 
 	<script>
 		
@@ -21,9 +22,11 @@
 <body>
 	{{ block "main" . }}{{ end }}
 
+	{{ if ne .Section "invite" }}
 	<footer class="column">
 		<p>Pajka <span class="pink">&hearts;</span> Honza, 2015—2019—a nafurt &middot; <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlp-39nIVKwBSkFWnxKgrNF_PSOQufkPEbk_Gdp_e0oAoXzQ/viewform">Kontaktní formulář</a></p>
 	</footer>
+	{{ end }}
 
 	</div>
 

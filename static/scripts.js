@@ -23,21 +23,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
   });
 
-  document.querySelector("#concept ol").addEventListener("click", function(e) {
-    Array.prototype.slice.call(document.querySelectorAll("#concept ol strong")).forEach(function(el) {
-      el.innerHTML = el.innerHTML.replace(/(^| )([^\sa#])/g, " #$2");
+  if (document.querySelector("#concept ol")) {
+    document.querySelector("#concept ol").addEventListener("click", function(e) {
+      Array.prototype.slice.call(document.querySelectorAll("#concept ol strong")).forEach(function(el) {
+        el.innerHTML = el.innerHTML.replace(/(^| )([^\sa#])/g, " #$2");
+      });
+
+      if (!profited) {
+        var el = document.createElement("strong");
+        el.innerHTML = " #profit";
+        document.querySelector("#concept ol").querySelector("li:last-child").appendChild(el);
+      }
+
+      profited++;
+
+      if (profited > 3) window.alert('ZOMG MUCH PROFIT!')
     });
-
-    if (!profited) {
-      var el = document.createElement("strong");
-      el.innerHTML = " #profit";
-      document.querySelector("#concept ol").querySelector("li:last-child").appendChild(el);
-    }
-
-    profited++;
-
-    if (profited > 3) window.alert('ZOMG MUCH PROFIT!')
-  });
+  }
 
 });
 
