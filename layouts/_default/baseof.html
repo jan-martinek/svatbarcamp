@@ -12,12 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="/style.css?v=2">
 
-	<meta name="description" content="{{ if eq .Section "invite" }}{{ .Params.address }},<br>
-		rádi bychom {{ .Params.pronoun }} pozvali na naši svatbu!{{ else }}Pavla a Honza se mají moc rádi. Neumí pořádat svatbu, ale umí pořádat konferenci. Svatbarcamp je barcamp spojený se svatbou.{{ end }}">
-
-	<script>
-		
-	</script>
+	<meta name="description" content="{{ if eq .Section "invite" }}{{ .Params.address }}, rádi bychom {{ .Params.pronoun }} pozvali na naši svatbu!{{ else }}Pavla a Honza se mají moc rádi. Neumí pořádat svatbu, ale umí pořádat konferenci. Svatbarcamp je barcamp spojený se svatbou.{{ end }}">
 </head>
 <body>
 	{{ block "main" . }}{{ end }}
