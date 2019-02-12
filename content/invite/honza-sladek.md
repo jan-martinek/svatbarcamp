@@ -1,9 +1,9 @@
 ---
 title: Pozvánka!
-address: Milý Honzo
-pronoun: tě
-checkout: mrkni
-rsvp: dej
-rsvp2: dorazíš
-rsvp3: chceš
+address: Milý Honzo s rodinou
+pronoun: vás
+checkout: mrkněte
+rsvp: dejte
+rsvp2: dorazíte
+rsvp3: chcete
 ---
