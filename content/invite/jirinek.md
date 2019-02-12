@@ -1,5 +1,5 @@
 ---
 title: Pozvánka!
-address: Milý Henry
+address: Milý Jiřínku
 rsvp: dej
 ---

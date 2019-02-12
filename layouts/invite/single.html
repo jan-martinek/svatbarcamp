@@ -1,5 +1,5 @@
 {{ define "main" }}
-	
+	{{ $sg := cond (eq "dej" .Params.rsvp) true false }}
 	<div class="column invite-comment">
 		<p class="separator">&hearts;</p>
 	</div>
@@ -20,7 +20,7 @@
 
 	<div class="column invite-comment">
 		<p><b>{{ .Params.address }}</b>,<br>
-		rádi bychom {{ .Params.pronoun }} pozvali na náš Svatbarcamp!</p>
+		rádi bychom {{ .Params.pronoun }} pozvali na náš… Svatbarcamp!</p>
 	</div>
 
 	<div class="card">
@@ -37,10 +37,15 @@
 	</div>
 
 	<div class="column invite-comment">
-		<p>{{ .Params.checkout | title }} na podrobnosti a {{ .Params.rsvp }} nám vědět, jestli {{ .Params.rsvp2 }}. A kolik vás bude :) A jestli si {{ .Params.rsvp3 }} připravit přednášku nebo workshop. A tak vůbec. Těšíme se <span class="red">&hearts;</span></p>
-		<p>Registrace je otevřená do&nbsp;16.&nbsp;února.</p>
+		{{ if $sg }}
+			<p>Mrkni na podrobnosti a dej nám prosím vědět, jestli dorazíš. A jestli si chceš připravit přednášku nebo workshop. A jestli chceš vzít někoho s sebou. A tak vůbec 🙃</p>
+		{{ else }}
+			<p>Mrkněte na podrobnosti a dejte nám prosím vědět, jestli dorazíte. A jestli si chcete připravit přednášku nebo workshop. A tak vůbec 🙃</p>
+		{{ end }}
 
-		<center><br><b><a href="/" class="button" style="line-height: 1.4em">&rarr; &nbsp; &hearts; &nbsp; &rarr;</a></b></center>
+		<p>Registrace je otevřená do&nbsp;16.&nbsp;února.<br> <b>Moc se těšíme <span class="red">&hearts;</span></b></p>
+
+		<center><br><b><a href="/" class="button" style="line-height: 1.4em">Klik tu! &hearts;</a></b></center>
 		<!-- 90s neskončily, 90s trvají -->
 	</div>
 {{ end }}
