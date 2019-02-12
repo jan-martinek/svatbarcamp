@@ -20,7 +20,7 @@
 
 	<div class="column invite-comment">
 		<p><b>{{ .Params.address }}</b>,<br>
-		rádi bychom {{ .Params.pronoun }} pozvali na náš… Svatbarcamp!</p>
+		rádi bychom {{ if $sg }}tě{{ else }}vás{{ end }} pozvali na náš… Svatbarcamp!</p>
 	</div>
 
 	<div class="card">
