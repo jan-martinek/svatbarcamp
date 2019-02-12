@@ -1,9 +1,9 @@
 ---
 title: Pozvánka!
-address: Milý Vítku
-pronoun: tě
-checkout: mrkni
-rsvp: dej
-rsvp2: dorazíš
-rsvp3: chceš
+address: Milí Jano a Vítku
+pronoun: vás
+checkout: mrkněte
+rsvp: dejte
+rsvp2: dorazíte
+rsvp3: chcete
 ---

@@ -1,6 +1,6 @@
 ---
 title: Pozvánka!
-address: Milý Honzo
+address: Milý Jabli
 pronoun: tě
 checkout: mrkni
 rsvp: dej
