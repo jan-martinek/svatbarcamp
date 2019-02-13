@@ -1,5 +1,5 @@
 ---
 title: Pozvánka!
 address: Milí Socáku a Pájo
-rsvp: dej
+rsvp: dejte
 ---
