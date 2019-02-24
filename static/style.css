@@ -451,6 +451,11 @@ dt {
 #tym .wrapper h2 {
 	color: rgba(147,64,63,1);
 	font-size: var(--large);
+	margin-bottom: 0;
+}
+
+#tym p.twlink {
+	margin-top: 0;
 }
 
 #tym .wrapper div {
