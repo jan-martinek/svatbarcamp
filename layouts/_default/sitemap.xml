@@ -1,4 +1,4 @@
-{{- $disabled := slice "faq" "parts" "places" -}}
+{{- $disabled := slice "faq" "parts" "places" "invite" -}}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{{ range .Data.Pages }}{{ if not (in $disabled .Section) }}
   <url>
     <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}

@@ -1,0 +1,51 @@
+{{ define "main" }}
+	{{ $sg := cond (eq "dej" .Params.rsvp) true false }}
+	<div class="column invite-comment">
+		<p class="separator">&hearts;</p>
+	</div>
+	
+
+	<div class="card">
+		<div class="front">
+			<h2>
+				Pavla Minaříková<br>
+				Jan Martinek
+			</h2>
+
+			<blockquote>
+				„Milovat někoho není jen silný cit — je to rozhodnutí, je to soud, je to slib. (…) Láska je umění, stejně jako jím je život sám; chceme-li se naučit milovat, musíme postupovat stejně, jako když se chceme vzdělávat v kterémkoli oboru, třeba  v hudbě, malířství, medicíně či inženýrství.“ <cite>Erich Fromm</cite>
+			</blockquote>
+		</div>
+	</div>
+
+	<div class="column invite-comment">
+		<p><b>{{ .Params.address }}</b>,<br>
+		rádi bychom {{ if $sg }}tě{{ else }}vás{{ end }} pozvali na náš… Svatbarcamp!</p>
+	</div>
+
+	<div class="card">
+		<div class="back">
+			<h2>
+				Pavla a Jan<br>
+				Martinkovi
+			</h2>
+			<p>
+				9. března 2019<br>
+				 radnice Brno-střed<br>
+				<a href="/">svatbarcamp.cz</a>
+		</div>
+	</div>
+
+	<div class="column invite-comment">
+		{{ if $sg }}
+			<p>Mrkni na podrobnosti a dej nám prosím vědět, jestli dorazíš. A jestli si chceš připravit přednášku nebo workshop. A jestli chceš vzít někoho s sebou. A tak vůbec 🙃</p>
+		{{ else }}
+			<p>Mrkněte na podrobnosti a dejte nám prosím vědět, jestli dorazíte. A jestli si chcete připravit přednášku nebo workshop. A tak vůbec 🙃</p>
+		{{ end }}
+
+		<p><b>Moc se těšíme <span class="red">&hearts;</span></b></p>
+
+		<center><br><b><a href="/" class="button" style="line-height: 1.4em">Klik tu! &hearts;</a></b></center>
+		<!-- 90s neskončily, 90s trvají -->
+	</div>
+{{ end }}

@@ -70,6 +70,17 @@
 	opacity: 0.7;
 }
 
+.red,
+.separator {
+	color: var(--pink-3);
+	text-shadow: 1px 1px 1px var(--green-3);
+	
+}
+
+.separator {
+	padding: 2rem;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -176,13 +187,18 @@ dd {
 	border: 1px solid var(--brown-3);
 	
 	padding: 1rem 1rem 1rem 2.5rem;
+
+	transform-origin: 50% 50%;
+	transform: rotate(0.5deg);
 }
 
 @media (min-width: 800px) {
 	#concept ol {
 		border-width: 0 1px 1px 0;
-		padding: 4rem 1rem 1rem 2.5rem;
-		margin-top: -3rem;
+		padding: 2rem 1rem 1rem 2.5rem;
+		border-top: 1px solid var(--brown-3-half);
+		border-left: 1px solid var(--brown-3-half);
+		margin-top: -1rem;
 	}
 }
 
@@ -353,10 +369,7 @@ dt {
 	text-transform: lowercase;
 }
 .hero nav ul li.separator {
-	width: 10em;
-	padding: 0.5rem 0;
-	margin-bottom: 0.5rem;
-	border-bottom: 1px solid var(--brown-2-half);
+	display: none;
 }
 
 @media (max-width: 799.9px) {
@@ -689,4 +702,55 @@ dt {
 	}
 }
 
+.invite-comment p {
+	text-align: center;
+	max-width: 9cm;
+	margin: 1em auto;
+}
 
+
+.card {
+	max-width: 9cm;
+	margin: 0 auto;
+}
+
+.card .front,
+.card .back {
+	background: white;
+	max-width: 9cm;
+	min-height: 5cm;
+	padding: 0.4cm;
+
+	box-sizing: border-box;
+	margin: 1cm 0;
+
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+	font-size: 0.5cm;
+	margin: 0 0 0.5cm;
+	text-shadow: none;
+}
+
+.card .front h2 {
+	color: var(--green-4);
+}
+
+.card blockquote {
+	margin: 0;
+	font-size: 0.32cm;
+	line-height: 1.4em;
+	font-style: italic;
+}
+
+.card blockquote cite {
+	font-style: normal;
+	white-space: nowrap;
+}
+
+.card p {
+	font-size: 0.4cm;
+	color: #555;
+	margin: 1cm 0 0;
+}
