@@ -1,0 +1,37 @@
+{
+	"organizations": [
+		{
+			"target": "Lidé s postižením",
+			"name": "Nadační fond GEMÁČEK A JAVORNÍČEK",
+			"mission": "Hlavním účelem je zkvalitnění života osobám s mentálním postižením.",
+			"account": "27-7493780237/0100",
+			"darujme": "",
+			"web": "http://ssluh.cz/dzp/dzp-javornik-chvalcov/o-domove.html"
+		},
+		{
+			"target": "Senioři",
+			"name": "Charita Nový Hrozenkov",
+			"mission": "Zajišťujeme komplexní sociální služby osamělým a nemocným seniorům v jejich domácím prostředí, bez ohledu na jejich věk, barvu pleti a vyznání.",
+			"account": "627344851/0100",
+			"darujme": "https://www.darujme.cz/projekt/1200674",
+			"web": "https://www.nhrozenkov.charita.cz"
+		},
+		{
+			"target": "Příroda",
+			"name": "Limity jsme my",
+			"mission": "Otevřené občanské hnutí proti těžbě a spalování uhlí.",
+			"account": "",
+			"darujme": "https://www.darujme.cz/projekt/1200122",
+			"web": "https://limityjsmemy.cz"
+		},
+		{
+			"target": "Společnost",
+			"name": "Nesehnutí",
+			"mission": "Chceme ukázat, že změna společnosti založená na respektu k lidem, zvířatům i přírodě je možná a musí vycházet především zdola. ",
+			"account": "",
+			"darujme": "https://www.darujme.cz/projekt/1200406",
+			"web": "http://nesehnuti.cz"
+		}
+	]
+}
+
