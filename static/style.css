@@ -53,6 +53,7 @@
 	--pink-3-t: rgba(210,153,151,0.8);
 	--pink-4-t: rgba(177,104,103,0.8);	
 
+	--small: 14px;
 	--normal: 16px;
 	--large: 20px;
 	--huge: 36px;
@@ -60,6 +61,7 @@
 
 @media (max-width: 799.9px) {
 	:root {
+		--small: 12px;
 		--normal: 13px;
 		--large: 15px;
 		--huge: 20px;
@@ -431,79 +433,98 @@ dt {
 	box-shadow: 8px 8px 0 var(--green-4-half);
 }
 
+#tym .wrapper h2,
 #tym .wrapper p {
-	padding: 0.5rem;
+	margin: 0.5rem 0;
 	text-align: center;
 }
 
-#tym .wrapper p:nth-child(1) {
+#tym .wrapper h2 {
+	padding-top: 0.5rem;
+	font-weight: bold;
+}
+
+#tym .wrapper a {
+	color: rgba(107,34,33,1);
+}
+
+#tym .wrapper h2 {
+	color: rgba(147,64,63,1);
+	font-size: var(--large);
+}
+
+#tym .wrapper div {
+	padding-bottom: 0.5rem;
+}
+
+#tym .wrapper div:nth-child(1) {
 	background: var(--brown-3-t);
 	
 }
-#tym .wrapper p:nth-child(2) {
+#tym .wrapper div:nth-child(2) {
 	background: var(--green-3-t);
 	
 }
-#tym .wrapper p:nth-child(3) {
+#tym .wrapper div:nth-child(3) {
 	background: var(--pink-3-t);
 	
 }
-#tym .wrapper p:nth-child(4) {
+#tym .wrapper div:nth-child(4) {
 	background: var(--pink-3-t);
 	
 }
-#tym .wrapper p:nth-child(5) {
+#tym .wrapper div:nth-child(5) {
 	background: var(--pink-3-t);
 	
 }
 
 
-#tym .wrapper p:nth-child(1) img { 
+#tym .wrapper div:nth-child(1) img { 
 	transform: rotate(3deg); 
 	animation: hearttiny 12.5s ease;
 	animation-iteration-count: infinite;
 }
-#tym .wrapper p:nth-child(1) img:hover { 
+#tym .wrapper div:nth-child(1) img:hover { 
 	animation: joy 6s ease infinite; 
 }
 
 
-#tym .wrapper p:nth-child(2) img { 
+#tym .wrapper div:nth-child(2) img { 
 	transform: rotate(-2deg); 
 	animation: hearttiny 5.1s ease;
 	animation-iteration-count: infinite;
 }
-#tym .wrapper p:nth-child(2) img:hover { 
+#tym .wrapper div:nth-child(2) img:hover { 
 	animation: joy 6s ease infinite; 
 }
 
 
-#tym .wrapper p:nth-child(3) img { 
+#tym .wrapper div:nth-child(3) img { 
 	transform: rotate(1deg); 
 	animation: hearttiny 9.0s ease;
 	animation-iteration-count: infinite;
 }
-#tym .wrapper p:nth-child(3) img:hover { 
+#tym .wrapper div:nth-child(3) img:hover { 
 	animation: joy 6s ease infinite; 
 }
 
 
-#tym .wrapper p:nth-child(4) img { 
+#tym .wrapper div:nth-child(4) img { 
 	transform: rotate(-3deg); 
 	animation: hearttiny 4.2s ease;
 	animation-iteration-count: infinite;
 }
-#tym .wrapper p:nth-child(4) img:hover { 
+#tym .wrapper div:nth-child(4) img:hover { 
 	animation: joy 6s ease infinite; 
 }
 
 
-#tym .wrapper p:nth-child(5) img { 
+#tym .wrapper div:nth-child(5) img { 
 	transform: rotate(2deg); 
 	animation: hearttiny 9.3s ease;
 	animation-iteration-count: infinite;
 }
-#tym .wrapper p:nth-child(5) img:hover { 
+#tym .wrapper div:nth-child(5) img:hover { 
 	animation: joy 6s ease infinite; 
 }
 
@@ -754,3 +775,54 @@ dt {
 	color: #555;
 	margin: 1cm 0 0;
 }
+
+.attendees {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+}
+
+.attendees figure {
+	margin: 0;
+	padding: 0;
+}
+
+.attendee {
+	background: var(--green-2-half);
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 2fr 5fr;
+}
+
+.attendee:nth-child(4n) {     transform: rotate(-2deg); }
+.attendee:nth-child(4n + 1) { transform: rotate(3deg); }
+.attendee:nth-child(4n + 2) { transform: rotate(-1deg); }
+.attendee:nth-child(4n + 3) { transform: rotate(2deg); }
+
+.attendee:nth-child(5n) {     box-shadow: 4px 4px 0 var(--pink-4-t); }
+.attendee:nth-child(5n + 1) { box-shadow: 4px 4px 0 var(--green-4-t); }
+.attendee:nth-child(5n + 2) { box-shadow: 4px 4px 0 var(--brown-4-t); }
+.attendee:nth-child(5n + 3) { box-shadow: 4px 4px 0 var(--green-4-t); }
+.attendee:nth-child(5n + 4) { box-shadow: 4px 4px 0 var(--pink-4-t); }
+.attendee:nth-child(5n + 5) { box-shadow: 4px 4px 0 var(--pink-4-t); }
+.attendee:nth-child(5n + 6) { box-shadow: 4px 4px 0 var(--brown-4-t); }
+.attendee:nth-child(5n + 6) { box-shadow: 4px 4px 0 var(--green-4-t); }
+
+.attendee img {
+	display: block;
+	width: 100%;
+}
+
+.attendee h2 {
+	margin: 0.5rem 0 0;
+	font-size: var(--normal);
+	font-weight: bold;
+	color: black;
+}
+
+.attendee p {
+	font-size: var(--small);
+	line-height: 1.4;
+	margin: 0.3rem 0 0;
+}
+

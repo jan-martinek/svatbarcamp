@@ -1,0 +1,48 @@
+{{ $attendees := getCSV "," "attendees.csv" }}
+{{ $order := slice }}
+{{ $disabled := slice "Pavla Minaříková ⇾ Martinková" "Honza Martinek" "Martin Mayer" "Lukáš Strouhal" "Soňa Príborská" }}
+
+{{ range $attendees }}
+	{{ $order = $order | append (index . 0) }}	
+{{ end }}
+
+<div class="attendees">
+	{{ range $index, $name := sort $order }}
+		{{ range $attendees }}
+			{{ if and (eq $name (index . 0)) (not (in $disabled $name)) }}
+				{{ $name := index . 1 }}
+				{{ $twitter := replace (index . 2) " " "" }}
+				{{ $grav := index . 3 }}
+				{{ $role := index . 4 }}
+				{{ $words := index . 5 }}
+
+				<div class="attendee">
+					<figure>
+						<img src="
+							{{- if ne $twitter "" -}}
+								/twicons/{{ $twitter }}.png
+							{{- else -}}
+								http://gravatar.com/avatar/{{ $grav }}?s=150&amp;d=mp
+							{{- end -}}
+						">
+					</figure>
+					<div>
+						<h2>{{ $name }} 
+							{{ if ne $twitter "" }}<a href="https://twitter.com/{{ $twitter }}">@{{ $twitter }}</a>{{ end}}
+						</h2>
+						
+						<p class="words">
+							{{ if ne $role "" }}
+								<b>{{ $role | title }}!</b>
+							{{ end }}
+							{{ if ne $words "" }}
+								{{ substr $words 0 1 | title -}}
+								{{- substr $words 1 | replaceRE "[, .?]+$" "" }}{{ if ne $words "" }}.{{ end }}
+							{{ end }}
+						</p>
+					</div>
+				</div>
+			{{ end }}
+		{{ end }}
+	{{ end }}
+</div>
