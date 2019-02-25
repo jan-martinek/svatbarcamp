@@ -314,6 +314,12 @@ dt {
 	max-width: 1230px;
 }
 
+@media (max-width: 799.9px) {
+	.column {
+		padding: 0 1rem;
+	}
+}
+
 .hero .bg {
 	background-image: url(hero.png);
 	padding-top: 49%;
@@ -787,6 +793,8 @@ dt {
 	grid-gap: 1rem;
 }
 
+
+
 .attendees figure {
 	margin: 0;
 	padding: 0;
@@ -797,6 +805,16 @@ dt {
 	display: grid;
 	grid-gap: 1rem;
 	grid-template-columns: 2fr 5fr;
+}
+
+@media (max-width: 799.9px) {
+	.attendees {
+		grid-template-columns: 1fr 1fr;
+	}
+	.attendee {
+		grid-template-columns: 1fr;
+		padding: 1rem;
+	}
 }
 
 .attendee:nth-child(4n) {     transform: rotate(-2deg); }
