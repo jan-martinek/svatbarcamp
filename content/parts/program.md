@@ -3,7 +3,7 @@ title: Program
 timetable: true
 talks:
   13:
-    desc: Obřad na radnici Brno-střed
+    desc: Obřad na <a href="https://mapy.cz/s/3pnZZ">Nové radnici Brno-střed</a> (Dominikánské náměstí 1)
     len: 1
   14:
     desc: Obědová přestávka
@@ -11,7 +11,7 @@ talks:
     note: vyberte si příjemné místo k obědu <a href="#kam-v-brne">na mapě</a>
     class: lunch pause
   17:
-    desc: Konference v kavárně Atlas
+    desc: Konference v <a href="https://mapy.cz/s/3po0d">kavárně Atlas</a>
     note: bude upřesněno
     len: 4
   21:
