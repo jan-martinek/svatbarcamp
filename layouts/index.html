@@ -59,6 +59,34 @@
 			</div>
 		{{ end }}
 	</div>
+
+	<h2 id="dobro">Dobro <span>&hearts;</span></h2>
+	<p>
+		Darovat můžete přímo (odkazy a čísla účtu najdete níže) anebo můžete přinést dar hotově, budou na něj nachystatné pokladničky u registrace. O&nbsp;bezhotovostním daru nám můžete dát vědět <a href="https://docs.google.com/forms/d/e/1FAIpQLScLkqPXHdNOZEtDh1oA8MRcNnhgdfKtJ7DR_EcevPGQndKXOg/viewform">pomocí formuláře</a> (i anonymně). Děkujeme!
+	</p>
+	<div class="wrapper">
+		{{ range .Site.Data.joy.organizations }}
+			<div id="{{ substr (base64Encode .name) 0 6 }}">
+				<p>Cílovka:  <b>{{ .target }}</b></p>
+				<h3>{{ .name }}</h3>
+				<p>
+					<b>{{ .mission | markdownify }}</b>
+					(<a href="{{ .web }}">webovky</a>)
+				</p>
+				<p>
+					{{ with .darujme }}
+						Darujte online na <a href="{{ . }}">darujme.cz</a>.
+					{{ end }}
+					{{ if and (ne .account "") (ne .darujme "")}}
+						<br>
+					{{ end }}
+					{{ with .account }}
+						č. účtu.: {{ . }}
+					{{ end }}
+				</p>
+			</div>
+		{{ end }}
+	</div>
 </div>
 
 <div class="column" id="main">
