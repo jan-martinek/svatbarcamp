@@ -5,6 +5,6 @@ long: 16.6073800
 icon: event
 slug: podnik 
 ---
-Zde proběhne v neděli v 9.00 after-afterparty – snídaně s rodinou.
+Podnik pro nedělní after-afterparty: snídani s rodinou.
 
 [FB Podniku](https://www.facebook.com/Podnikcafebar)
