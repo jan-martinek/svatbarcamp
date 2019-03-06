@@ -1,10 +1,14 @@
-<td class="{{ .type }} {{ index .event "class" }}"
+<td class="{{ .type }}
+	{{ index .event "class" }}
+	{{ if eq (index .event "desc") "none" }}invisible{{ end }}"
 	rowspan="{{ index .event "len" }}"
 	>
-	<b>{{ .hour }}.00</b>
-	{{ index .event "desc" | markdownify}}
-	{{ with index .event "note" }}
-		<br>
-		<small>({{ . | markdownify }})</small>
+	{{ if ne (index .event "desc") "none" }}
+		<b>{{ substr .hour 0 2 }}.{{ substr .hour 2 2 }}</b>
+		{{ index .event "desc" | markdownify}}
+		{{ with index .event "note" }}
+			<br>
+			<div class="small">{{ . | markdownify }}</div>
+		{{ end }}
 	{{ end }}
 </td>

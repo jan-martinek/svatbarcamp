@@ -11,4 +11,4 @@ Obědy jsou Achillova pata konferencí, proto jsme je outsourcovali! Roman Novot
 
 ### Registrace a Call for Papers
 
-Přímo při registraci můžete poslat návrh vašeho příspěvku. Více detailů najdete v sekci [Call for Papers](#cfp) (aka [Volání po příspěvcích](#cfp)).
+Registrace i CFP jsou již uzavřené: s příspěvky již budete muset počkat na příští ročník! **Podívejte se do [programu](#program), mezi jakými jmény jste se mohli ocitnout.**

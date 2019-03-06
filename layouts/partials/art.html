@@ -6,11 +6,10 @@
 		{{ if .Params.timetable }}
 			{{ $params := .Params}}
 			<table>
-				<tr><th></th><th>Přednášky</th><th>Workshopy</th></tr>
-				{{ range (slice 13 14 15 16 17 18 19 20 21 22 23) }}
+				<tr><th width="75%">"Přednášky</th><th width="25%">Workshopy</th></tr>
+				{{ range (slice 1300 1330 1400 1430 1500 1530 1600 1630 1700 1730 1800 1830 1900 1930 2000 2030 2100 2130 2200 2230 2300 2330) }}
 					<tr>
 						{{ $hour := . }}
-						<th>{{ . }}</th>
 						{{ range slice "talk" "workshop"}}
 							{{ $type := . }}
 							{{ with index (index $params (print . "s")) (string $hour) }}
@@ -20,13 +19,6 @@
 					</tr>
 				{{ end }}	
 			</table>
-
-			<h2 id="parkovani">Parkování</h2>
-
-			<p>Nejlepší místo pro parkování během svatby (obřad i barcamp jsou nedaleko od sebe) najdete v parkovacím domě <a href="https://www.bkom.cz/parkovani">Domini Park</a>, který je hned vedle Nové radnice.</p>
-
-			<p>Blízko jsou i <a href="https://www.bkom.cz/parkovani">dům na ul. Kopečné a podzemní parkování u Janáčkova divadla</a>, na <a href="http://www.parkovani-brno-centrum.cz">Moravském náměstí</a> nebo v <a href="http://www.centerparking.cz">obchodním domě IBC</a>.
-
 		{{ end }}
 	</div>
 </div>
