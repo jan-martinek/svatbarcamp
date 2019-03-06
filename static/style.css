@@ -864,7 +864,7 @@ dt {
 	font-size: var(--small);
 }
 .small ul {
-	margin-left: 1em;
+	padding-left: 1em;
 }
 .small li {
 	margin: 0 0 0.5em 0;

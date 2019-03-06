@@ -43,12 +43,12 @@ talks:
       - Zbiejczuk, A.: **Prasátko Peppa**  
         Někdy se může párům stát, že mají děti a pak je důležité připravit se na to, že je potřeba je zabavit a vybrat správné seriály, představíme si ten nejzásadnější: [Prasátko Peppa](https://en.wikipedia.org/wiki/Peppa_Pig).
       - Novák, O.: **Poučení z pubertálního vývoje**  
-        Ani se nenadějeme a uslyšíme sami sebe říkat "dokud žiješ pod mou střechou ..." Léta dospívání a resocializace jsou náročnou zkouškou pro puboše i rodiče, a ani my jsme nebyli výjimkou. Na názorných příkladech si vysvětlíme, jak dětem předat to nejlepší z vlastního dospívání a na které chyby je naopak upozornit. Poslouchat nás nebudou, to je jasné, ale není hezčí věty, než „já ti to říkal/a!“
+        Ani se nenadějeme a uslyšíme sami sebe říkat „dokud žiješ pod mou střechou ...“ Léta dospívání a resocializace jsou náročnou zkouškou pro puboše i rodiče, a ani my jsme nebyli výjimkou. Na názorných příkladech si vysvětlíme, jak dětem předat to nejlepší z vlastního dospívání a na které chyby je naopak upozornit. Poslouchat nás nebudou, to je jasné, ale není hezčí věty, než „já ti to říkal/a!“
       - Šeděnka, J.: **Videohry po třicítce: co se změní?**  
         Hraní v dospělosti má jinou dynamiku než v dětství. Výběr her s pomocí HLTB a Metacritic. Jak skloubit hraní s prací a rodinou? Kde sehnat spoluhráče?
       - Matulík, R.: **Anime videa a trap rap**  
         Chtěl bych vám povědět o docela zajímavém trendu kombinace anime videí a tvrdého trap rapu. Fakt to k sobě super sedí.
-      - Martinková, P. & Martinek, J.: **Jak jsme chystali Svatbarcamp**
+      - Martinková, P. & Martinek, J.: **Jak jsme chystali Svatbarcamp**  
         Tipy pro organizátory příštího ročníku, rituální házení doménou.
     len: 2
   2030:
