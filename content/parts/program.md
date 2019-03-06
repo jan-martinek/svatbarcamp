@@ -30,6 +30,7 @@ talks:
         O zapojení čečulky při řešení potíží nízké intenzity.
       - Kalíšek, P.: **Vztahy a jejich vykonávání**  
         Prezentace nových rituálů a normality. Chcete žít ve světě? Chcete žít? Vezměte krumpáč a propoťte si triko. Erudice a zkušenosti na útesech ideace. Diskomfortní souostroví jednoho velkého vtipu.
+      - Kouzelník, J.: **Možná přijde**
       - Srb, D.: **Ukulele workshop**
     len: 2
   1900:
