@@ -6,7 +6,7 @@
 		{{ if .Params.timetable }}
 			{{ $params := .Params}}
 			<table>
-				<tr><th width="75%">"Přednášky</th><th width="25%">Workshopy</th></tr>
+				<tr><th width="70%">"Přednášky</th><th width="30%">Workshopy</th></tr>
 				{{ range (slice 1300 1330 1400 1430 1500 1530 1600 1630 1700 1730 1800 1830 1900 1930 2000 2030 2100 2130 2200 2230 2300 2330) }}
 					<tr>
 						{{ $hour := . }}

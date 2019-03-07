@@ -3,10 +3,10 @@ title: Program
 timetable: true
 talks:
   1300:
-    desc: Obřad na Nové radnici Brno-střed (<a href="https://mapy.cz/s/3pnZZ">Dominikánské náměstí 1</a>)
+    desc: "**Obřad** na Nové radnici Brno-střed (<a href=\"https://mapy.cz/s/3pnZZ\">Dominikánské náměstí 1</a>)"
     len: 2
   1400:
-    desc: Obědová přestávka
+    desc: "**Obědová přestávka**"
     len: 6
     note: (vyberte si příjemné místo k obědu <a href="#kam-v-brne">na mapě</a>)
     class: lunch pause
@@ -56,7 +56,7 @@ talks:
     desc: "**Bullshit Hero**"
     len: 1
   2100:
-    desc: Afterpárty v kavárně Atlas
+    desc: "**Afterpárty** v kavárně Atlas"
     len: 7
 workshops:
   1400:
@@ -69,6 +69,11 @@ workshops:
       - Dardová, T.: **Zdobení svatebních cupcakes**
       - Horáková, M.: **Pečení pecnu (bez pečení)**
     len: 1
+  2100:
+    desc: "**Chill-out zóna se otevírá**"
+    note: (klídek a retro hry)
+    len: 2
   2200:
-    desc: "Lanc, J.: **Zlokurz** Kurz nenaplněných očekávání. Kurz, který Vám pomůže být horším člověkem."
+    desc: "Lanc, J.: **Zlokurz**"
+    note: Kurz nenaplněných očekávání. Kurz, který Vám pomůže být horším člověkem.
 ---
