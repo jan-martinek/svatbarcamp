@@ -34,8 +34,10 @@ talks:
       - Srb, D.: **Ukulele workshop**
     len: 2
   1900:
-    desc: none
+    desc: "**Coffee & Cupcake & Bread Break**"
     len: 1
+    note: (dejte si dobrotu — aktivně na workshopu či pasivně kdekoli jinde)
+    class: lunch pause
   1930:
     desc: "**BLOK 2: Děti a hry**"
     note: |
